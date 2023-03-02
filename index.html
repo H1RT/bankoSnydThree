@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container pt-2">
+        <div class="d-flex">
+            <div class="form-floating mb-3" style="max-width: 300px">
+                <input type="number" class="form-control" id="inputNumber">
+                <label for="inputNumber">Indtast nummer</label>
+            </div>
+            <div class="ml-2 my-auto">
+                <button type="button" class="btn btn-primary" id="submitNumber">Indtast</button>
+            </div>
+        </div>
+
+        <p class="mb-0">Indtastede numre:</p>
+        <p id="numbers-entered"></p>
+
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="rowselector" id="onerow" checked>
+            <label class="form-check-label" for="onerow">
+                En række
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="rowselector" id="tworow">
+            <label class="form-check-label" for="tworow">
+                To rækker
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="rowselector" id="fullplate">
+            <label class="form-check-label" for="fullplate">
+                Fuld plade
+            </label>
+        </div>
+
+
+        <h1 id="winner-seed"></h1>
+        <h1 id="time-seconds"></h1>
+    </div>
+
+    <script src="seedrandom.js" defer></script>
+    <script src="index.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
